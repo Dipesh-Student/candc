@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CandC About-Us</title>
+
+    <!-- load custom css file style.css -->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+
+    <!--load bootstrap.css and bootstrap.min.css from resources-->
+    <link rel="stylesheet" href="resources/bootstrap-5.1.3/css/bootstrap.css">
+    <link rel="stylesheet" href="resources/bootstrap-5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        h2 {
+            text-decoration: underline;
+        }
+        
+        .member {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .member-card {
+            display: flex;
+            justify-content: center;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .member {
+                flex-direction: column;
+                max-width: 50%;
+            }
+        }
+        
+        .card {
+            margin: 5px;
+            background: none;
+        }
+        
+        .card img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="business-title">
+            CandC
+        </div>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="/candc/">Home</a>
+                <a href="/candc/industries.html">Industries</a>
+                <a href="/candc/about.html" class="active">About</a>
+                <a href="/candc/contact.html">Contact</a>
+                <div class="ndropdown">
+                    <button class="ndropbtn">Services 
+              <i class="fa fa-caret-down"></i>
+            </button>
+                    <div class="ndropdown-content">
+                        <a href="/candc/services.html?service=aa">Audit & Assurance</a>
+                        <a href="/candc/services.html?service=tr">Tax & Regulatory</a>
+                        <a href="/candc/services.html?service=adv">Advisory</a>
+                        <a href="/candc/services.html?service=os">Outsourcing</a>
+
+                    </div>
+                </div>
+                <a href="/candc/career.html">Career</a>
+                <a href="/candc/faq.html">Help</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container" id="container">
+        <!-- load container data using jquery -->
+        <div class="about">
+            <div>
+                <h2>Business Overview</h2>
+                <p>Lavoro Marketing designs and optimizes customer loyalty programs for retail brands across the country. This LLC is headquartered in Chicago, Illinois, but has locations on the East and West coasts to support our widespread presence and
+                    clients. The company was founded five years ago by Hugo Pazzo, an industry expert with over 30 years of industry experience. He realized loyalty programs were an innovative way to attract and maintain a strong customer base. He decided
+                    to begin Lavoro Marketing to focus on this concept and develop unique software to help businesses manage better manage customers and their data. In the past three years, Lavoro Marketing has grown by 150%. We attribute that growth
+                    to our commitment to identifying new clients and markets and hope to double that within the next two years. Currently, we are seeking an investment of $60,000 to help scale our company and grow our team across the United States. We
+                    also aim to use those funds to help continue innovating our software to create exciting and rewarding experiences for our customers.</p>
+            </div>
+            <div>
+                <h2>Our Vision</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit natus vitae provident atque corrupti iste omnis quod doloribus. Beatae repellat a dolor cum quasi iusto sapiente aut fugiat maiores harum.</p>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <div class="member">
+                <div class="card">
+                    <img src="resources/assets/user-profile-icon-free-vector.jpg" alt="Avatar">
+                    <div class="container">
+                        <h4><b>member 1</b></h4>
+                        <span>myContact and myemail</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="resources/assets/user-profile-icon-free-vector.jpg" alt="Avatar">
+                    <div class="container">
+                        <h4><b>member 2</b></h4>
+                        <span>myContact and myemail</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="resources/assets/user-profile-icon-free-vector.jpg" alt="Avatar">
+                    <div class="container">
+                        <h4><b>member 3</b></h4>
+                        <span>myContact and myemail</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="member">
+            <div class="card">
+                <img src="resources/assets/user-profile-icon-free-vector.jpg" alt="Avatar">
+                <div class="container">
+                    <h4><b>Partner 1</b></h4>
+                    <span>myContact and myemail</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="resources/assets/user-profile-icon-free-vector.jpg" alt="Avatar">
+                <div class="container">
+                    <h4><b>Partner 2</b></h4>
+                    <span>myContact and myemail</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer class="w-100 py-4 flex-shrink-0">
+
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="h1 text-white">FB.</h5>
+                    <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    <span class="small text-muted">
+                        Chokshi & Chokshi LLP Copyrights © 2017-<span id="this-year"></span>. All rights reserved.
+                    </span>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Get started</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Site-Map</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Get started</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Contact</h5>
+                    <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Queries, Message, Questions ..." required></textarea>
+                        </div>
+                        <button class="footer-btn" type="submit">Send</button>
+                        <button class="footer-btn" type="reset">Reset</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- load jquery instance -->
+    <script src="resources/jquery-3.6.0.min.js"></script>
+    <!-- load bootstrap js -->
+    <script src="resources/bootstrap-5.1.3/js/bootstrap.min.js"></script>
+    <!-- load custom main javascript -->
+    <script src="resources/js/main.js"></script>
+
+    <script>
+        // function loadPage(page) {
+        //     $("#container").load(`src/${page}.html`);
+        // }
+    </script>
+</body>
+
+</html>

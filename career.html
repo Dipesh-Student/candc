@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CandC Jobs & Career</title>
+
+    <!-- load custom css file style.css -->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+
+    <!--load bootstrap.css and bootstrap.min.css from resources-->
+    <link rel="stylesheet" href="resources/bootstrap-5.1.3/css/bootstrap.css">
+    <link rel="stylesheet" href="resources/bootstrap-5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .service-content {
+            padding: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="business-title">
+            CandC
+        </div>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="/candc/">Home</a>
+                <a href="/candc/industries.html">Industries</a>
+                <a href="/candc/about.html">About</a>
+                <a href="/candc/contact.html">Contact</a>
+                <div class="ndropdown">
+                    <button class="ndropbtn">Services 
+              <i class="fa fa-caret-down"></i>
+            </button>
+                    <div class="ndropdown-content">
+                        <a href="/candc/services.html?service=aa">Audit & Assurance</a>
+                        <a href="/candc/services.html?service=tr">Tax & Regulatory</a>
+                        <a href="/candc/services.html?service=adv">Advisory</a>
+                        <a href="/candc/services.html?service=os">Outsourcing</a>
+
+                    </div>
+                </div>
+                <a href="/candc/career.html" class="active">Career</a>
+                <a href="/candc/faq.html">Help</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container" id="container">
+        <!-- load container data using jquery -->
+        <div class="career-div" hidden>
+            <h3>We power innovation, Join us.</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ad, in assumenda nisi praesentium deserunt eius autem error deleniti, enim quidem? Autem mollitia est impedit ea minus accusantium voluptate quas?
+            </p>
+
+            <h2>Job Category CA</h2>
+            <div class="jobs">
+                <div class="card">
+                    <div class="card-header">
+                        Ca freshers
+                    </div>
+                    <div class="card-body">
+                        required skill
+                        <ul>
+                            <li>skill 1</li>
+                            <li>skill 2</li>
+                            <li>skill 3</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-secondary" name="job" value="pos-ca">Apply</button>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Job Category CA</h2>
+            <div class="jobs">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-header">
+                                Ca freshers
+                            </div>
+                            <div class="card-body">
+                                required skill
+                                <ul>
+                                    <li>skill 1</li>
+                                    <li>skill 2</li>
+                                    <li>skill 3</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-secondary" name="job" value="pos-adv">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-header">
+                                Ca freshers
+                            </div>
+                            <div class="card-body">
+                                required skill
+                                <ul>
+                                    <li>skill 1</li>
+                                    <li>skill 2</li>
+                                    <li>skill 3</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-secondary" name="job" value="pos-mba">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <h2>Job Category CA</h2>
+            <div class="jobs">
+                <div class="card">
+                    <div class="card-header">
+                        Ca freshers
+                    </div>
+                    <div class="card-body">
+                        required skill
+                        <ul>
+                            <li>skill 1</li>
+                            <li>skill 2</li>
+                            <li>skill 3</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-secondary">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="career-div">
+
+            <div>
+                <h3> What we are</h3>
+                <p>
+                    Chokshi and Chokshi LLP has a team of experienced and qualified people which includes Chartered Accountants, Ph.D, CAIIB, MBA, Cost Accountant, CISA, Company Secretary and others providing multi functional services across sectors. What makes it unique
+                    is the local expertise, personal attention and friendly work environment and on the other side a comprehensive network, breadth of work and resources of an international organisation. It offers a stable career path with challenging
+                    opportunities to Trained Accountants and Graduates. The internship program for aspiring Chartered Accountants provides a thorough professional grounding in various service areas and a self-enhancement program.
+                </p>
+
+                <p>
+                    Due to its ambitious plans C&C continuously looks for above people with outstanding capabilities who can bring new perspectives and dimensions to emerging trends and scenarios. Interested candidates can submit their detailed resume at hr@chokshiandchokshi.in
+                </p>
+            </div>
+
+            <h3>Vacancies</h3>
+
+            <form action="requesthandler.php" method="post">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="job-position-value" id="ca" value="ca">
+                    <label class="form-check-label" for="ca">
+                      ca
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="job-position-value" id="mba" value="mba">
+                    <label class="form-check-label" for="mba">
+                      mba
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="job-position-value" id="phd" value="phd">
+                    <label class="form-check-label" for="phd">
+                      phd
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="job-position-value" id="secretory" value="secretory">
+                    <label class="form-check-label" for="secretory">
+                        secretory
+                    </label>
+                </div>
+
+                <button class="btn btn-primary" name="job" type="submit">Apply</button>
+
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer class="w-100 py-4 flex-shrink-0">
+
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="h1 text-white">FB.</h5>
+                    <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    <span class="small text-muted">
+                        Chokshi & Chokshi LLP Copyrights © 2017-<span id="this-year"></span>. All rights reserved.
+                    </span>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Get started</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Site-Map</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Get started</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Contact</h5>
+                    <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Queries, Message, Questions ..." required></textarea>
+                        </div>
+                        <button class="footer-btn" type="submit">Send</button>
+                        <button class="footer-btn" type="reset">Reset</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- load jquery instance -->
+    <script src="resources/jquery-3.6.0.min.js"></script>
+    <!-- load bootstrap js -->
+    <script src="resources/bootstrap-5.1.3/js/bootstrap.min.js"></script>
+    <!-- load custom main javascript -->
+    <script src="resources/js/main.js"></script>
+
+</body>
+
+</html>

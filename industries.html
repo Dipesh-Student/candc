@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>candc Industries</title>
+
+    <!-- load custom css file style.css -->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+
+    <!--load bootstrap.css and bootstrap.min.css from resources-->
+    <link rel="stylesheet" href="resources/bootstrap-5.1.3/css/bootstrap.css">
+    <link rel="stylesheet" href="resources/bootstrap-5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="business-title">
+            CandC
+        </div>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="/candc/">Home</a>
+                <a href="/candc/industries.html" class="active">Industries</a>
+                <a href="/candc/about.html">About</a>
+                <a href="/candc/contact.html">Contact</a>
+                <div class="ndropdown">
+                    <button class="ndropbtn">Services 
+              <i class="fa fa-caret-down"></i>
+            </button>
+                    <div class="ndropdown-content">
+                        <a href="/candc/services.html?service=aa">Audit & Assurance</a>
+                        <a href="/candc/services.html?service=tr">Tax & Regulatory</a>
+                        <a href="/candc/services.html?service=adv">Advisory</a>
+                        <a href="/candc/services.html?service=os">Outsourcing</a>
+
+                    </div>
+                </div>
+                <a href="/candc/career.html">Career</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container" id="container">
+        <!-- load container data using jquery -->
+        <div>
+            <ul>
+                <li><b> Asset Management</b>
+                    <p> Asset Reconstruction, Mutual Fund, Insurance Funds, Private Equity, Portfolio Managers Banks and Financial Institutions</p>
+                </li>
+                <li><b> Infrastructure</b>
+                    <p> EPC contractors, Mining, Power Equipments</p>
+                </li>
+                <li><b> Pharma and Healthcare</b>
+                    <p> Pharmaceutical Manufacturers, Hospitals, Doctors, Health Clinics</p>
+                </li>
+                <li><b> Real estate</b>
+                    <p> Developers , Mall Management Companies</p>
+                </li>
+                <li><b> Regulatory & Quasi regulatory Bodies</b>
+                    <p> Banking and Capital Markets Regulators, Electricity Board, Commodity Regulator</p>
+                </li>
+                <li><b> Hospitality, Travel and Tourism</b>
+                    <p> Hotels, Hotel Management, Restaurants, Travel Portals, Travel Agents, Forex Dealers</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="w-100 py-4 flex-shrink-0">
+
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="h1 text-white">FB.</h5>
+                    <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    <span class="small text-muted">
+                        Chokshi & Chokshi LLP Copyrights © 2017-<span id="this-year"></span>. All rights reserved.
+                    </span>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Get started</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Site-Map</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Get started</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Contact</h5>
+                    <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Queries, Message, Questions ..." required></textarea>
+                        </div>
+                        <button class="footer-btn" type="submit">Send</button>
+                        <button class="footer-btn" type="reset">Reset</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- load jquery instance -->
+    <script src="resources/jquery-3.6.0.min.js"></script>
+    <!-- load bootstrap js -->
+    <script src="resources/bootstrap-5.1.3/js/bootstrap.min.js"></script>
+    <!-- load custom main javascript -->
+    <script src="resources/js/main.js"></script>
+
+    <script>
+        // function loadPage(page) {
+        //     $("#container").load(`src/${page}.html`);
+        // }
+    </script>
+</body>
+
+</html>
