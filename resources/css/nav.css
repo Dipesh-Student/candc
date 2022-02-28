@@ -1,3 +1,8 @@
+nav {
+    display: flex;
+    justify-content: center;
+}
+
 .topnav {
     overflow: hidden;
     background: none;
@@ -7,14 +12,15 @@
     float: left;
     display: block;
     color: #000;
-    text-align: center;
+    /* text-align: center; */
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    border-radius: 5px;
 }
 
-.active {
-    border-bottom: 3px solid red;
+.nav-active {
+    background-color: gray;
 }
 
 .topnav .icon {
@@ -70,6 +76,9 @@
 }
 
 @media screen and (max-width: 600px) {
+    nav {
+        display: block;
+    }
     .topnav a:not(:first-child),
     .ndropdown .ndropbtn {
         display: none;
