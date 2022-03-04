@@ -8,12 +8,26 @@ body {
     margin: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background-color: #ddd;
-    color: #2C3333;
+    background: url("../assets/x.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: #ececec;
+    color: #000;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header .business-title {
+header {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    background: #0693E3;
+    padding: 8px;
+    color: #ffffff;
+}
+
+.business-title {
     font-size: xx-large;
     text-align: center;
     font-family: Patua, One;
@@ -21,6 +35,30 @@ header .business-title {
 
 .container {
     padding: 16px;
+}
+
+.container-background-1 {
+    background: #f6f6f6;
+    padding: 16px 24px;
+    margin: 16px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px #ddd;
+}
+
+.para-background {
+    background-color: #ffffff;
+    padding: 16px 24px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px #ddd;
+}
+
+.blog-news {
+    display: flex;
+}
+
+.recent-news,
+.company-stats {
+    width: 50%;
 }
 
 footer {
@@ -41,4 +79,21 @@ footer {
 .footer-btn:hover {
     background-color: cornflowerblue;
     color: #ddd;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-size: auto 100vh;
+    }
+    .container-background-1 {
+        margin: 0;
+        margin-top: 16px;
+    }
+    .blog-news {
+        flex-direction: column;
+    }
+    .recent-news,
+    .company-stats {
+        width: 100%;
+    }
 }
